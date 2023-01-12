@@ -1,6 +1,6 @@
 {
   "name": "fighter-advice-cms",
-  "description": "Payload project created from ts-blog template",
+  "description": "The CMS behind the barbajoe's Fighter Advice app",
   "version": "0.1.0",
   "main": "dist/server.js",
   "license": "MIT",

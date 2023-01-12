@@ -1,12 +1,10 @@
-# fighter-advice-cms
+# figher-advice-cms
 
 This project was created using create-payload-app using the ts-blog template.
 
-## How to Use
+This is the CMS for the [Fighter Advice](https://github.com/Barbacoa08/fighter-advice) app by [barbajoe](https://rxresu.me/barbajoe/joseph-sebast-2023)
 
-`yarn dev` will start up your application and reload on any changes.
-
-### Docker
+## Docker (untested)
 
 If you have docker and docker-compose installed, you can run `docker-compose up`
 
