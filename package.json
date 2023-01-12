@@ -1,7 +1,19 @@
 {
+  "version": "1.0.0",
   "name": "fighter-advice-cms",
   "description": "The CMS behind the barbajoe's Fighter Advice app",
-  "version": "0.1.0",
+  "keywords": [
+    "typescript",
+    "node",
+    "express",
+    "payloadcms",
+    "payload-cms",
+    "northflank",
+    "mongodb",
+    "mongo-db",
+    "mongo-atlas",
+    "docker"
+  ],
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
