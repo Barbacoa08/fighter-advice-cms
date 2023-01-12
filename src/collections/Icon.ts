@@ -1,21 +1,24 @@
 import { CollectionConfig } from "payload/types";
 
-const Users: CollectionConfig = {
-  slug: "users",
-  auth: true,
+const Icon: CollectionConfig = {
+  slug: "icon",
   admin: {
-    useAsTitle: "email",
+    useAsTitle: "name",
   },
   access: {
     read: () => true,
   },
   fields: [
-    // Email added by default
     {
       name: "name",
       type: "text",
     },
+    {
+      name: "value",
+      type: "text",
+    },
   ],
+  timestamps: false,
 };
 
-export default Users;
+export default Icon;
