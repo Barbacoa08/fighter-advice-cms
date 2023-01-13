@@ -9,4 +9,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-      - run: (yarn all && echo "all checks have passed") || (echo "FA-CMS has fainted!"; exit 1)
+      - run: (yarn all && echo "all checks hadddve passed") || (echo "FA-CMS has fainted!"; exit 1)
