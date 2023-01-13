@@ -1,13 +1,13 @@
 This project was created using `npx create-payload-app` using the [ts-blog template](https://payloadcms.com/docs/getting-started/installation).
 
-# figher-advice-cms
+# figher-advice-cms ([admin](https://cms-fighter-advice.barbajoe.tech/admin/), [api](https://cms-fighter-advice.barbajoe.tech/api/))
 
 This is the CMS for the [Fighter Advice](https://github.com/Barbacoa08/fighter-advice) app by [barbajoe](https://rxresu.me/barbajoe/joseph-sebast-2023)
 
 ## how to Use
 
 - `yarn all`: will run everything. Install, build, tests, ect
-- `yarn start`: will start up localhost on port 3000
+- `yarn start`: will start up on [localhost:3000](http://localhost:3000)
 - `yarn generate:types`: generates `payload-types.ts` which the `fighter-advice` site imports
 
 ## docker
@@ -18,7 +18,13 @@ To build the docker image, run `docker build -t my-tag .`
 
 Ensure you are passing all needed environment variables when starting up your container via `--env-file` or setting them with your deployment.
 
-The 3 typical env vars will be `MONGODB_URI`, `PAYLOAD_SECRET`, and `PAYLOAD_CONFIG_PATH`
+The 3 typical env vars required are:
+
+> MONGODB_URI=mongodb+srv://mongodbnetcredsanduri
+> PAYLOAD_SECRET=secretcode
+> PAYLOAD_PUBLIC_BASE_DNS=http://localhost:3000
+
+Example docker run command:
 
 `docker run --env-file .env -p 3000:3000 my-tag`
 
