@@ -1,14 +1,14 @@
-# figher-advice-cms
+This project was created using `npx create-payload-app` using the [ts-blog template](https://payloadcms.com/docs/getting-started/installation).
 
-This project was created using create-payload-app using the ts-blog template.
+# figher-advice-cms
 
 This is the CMS for the [Fighter Advice](https://github.com/Barbacoa08/fighter-advice) app by [barbajoe](https://rxresu.me/barbajoe/joseph-sebast-2023)
 
 ## how to Use
 
-`yarn all`: will run everything. Install, build, tests, ect
-`yarn start`: will start up localhost on port 3000
-`yarn generate:types`: generates `payload-types.ts` which the `fighter-advice` site imports
+- `yarn all`: will run everything. Install, build, tests, ect
+- `yarn start`: will start up localhost on port 3000
+- `yarn generate:types`: generates `payload-types.ts` which the `fighter-advice` site imports
 
 ## docker
 
@@ -22,7 +22,7 @@ The 3 typical env vars will be `MONGODB_URI`, `PAYLOAD_SECRET`, and `PAYLOAD_CON
 
 `docker run --env-file .env -p 3000:3000 my-tag`
 
-## build resources
+## tech resources
 
 - [Payload CMS](https://payloadcms.com/docs/getting-started/what-is-payload)
 - [Northflank](https://app.northflank.com/) ([payload+northflank tutorial](https://northflank.com/guides/deploying-payload-cms))
