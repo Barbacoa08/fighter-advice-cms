@@ -20,4 +20,16 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, "generated-schema.graphql"),
   },
+  cors: [
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:5137",
+    "*.barbajoe.tech",
+  ],
+  csrf: [
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:5137",
+    "*.barbajoe.tech",
+  ],
 });
