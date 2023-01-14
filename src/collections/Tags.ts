@@ -7,6 +7,8 @@ const Tags: CollectionConfig = {
   },
   access: {
     read: () => true,
+    update: () => true,
+    admin: ({ req }) => Boolean(req.user),
   },
   fields: [
     {
