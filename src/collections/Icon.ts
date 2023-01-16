@@ -9,7 +9,7 @@ const Icon: CollectionConfig = {
   },
   access: {
     create: isEditorOrAdmin,
-    read: isLoggedIn,
+    read: () => true,
     update: isEditorOrAdmin,
     delete: isAdmin,
   },
