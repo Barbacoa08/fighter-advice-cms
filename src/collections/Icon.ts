@@ -1,19 +1,17 @@
 import { CollectionConfig } from "payload/types";
 
+import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
+
 const Icon: CollectionConfig = {
   slug: "icon",
   admin: {
     useAsTitle: "name",
   },
-  // TODO: update so that anyone can GET, but only admins can POST, PUT, DELETE
   access: {
-    // only this was set by default:
-    read: () => true,
-
-    // added these:
-    update: () => true,
-    create: () => true,
-    delete: () => true,
+    create: isEditorOrAdmin,
+    read: isLoggedIn,
+    update: isEditorOrAdmin,
+    delete: isAdmin,
   },
   fields: [
     {

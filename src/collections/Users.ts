@@ -1,6 +1,6 @@
 import { CollectionConfig } from "payload/types";
 
-import { isAdminFieldLevel } from "../access/isAdmin";
+import { isAdmin, isAdminFieldLevel, isAdminOrSelf } from "../access";
 
 const Users: CollectionConfig = {
   slug: "users",
@@ -8,15 +8,11 @@ const Users: CollectionConfig = {
   admin: {
     useAsTitle: "email",
   },
-  // TODO: update so that anyone can GET, but only admins can POST, PUT, DELETE
   access: {
-    // only this was set by default:
-    read: () => true,
-
-    // added these:
-    update: () => true,
-    create: () => true,
-    delete: () => true,
+    create: isAdmin,
+    read: isAdminOrSelf,
+    update: isAdminOrSelf,
+    delete: isAdmin,
   },
   fields: [
     // Email added by default
