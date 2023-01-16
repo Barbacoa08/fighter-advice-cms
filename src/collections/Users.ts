@@ -1,5 +1,7 @@
 import { CollectionConfig } from "payload/types";
 
+import { isAdminFieldLevel } from "../access/isAdmin";
+
 const Users: CollectionConfig = {
   slug: "users",
   auth: true,
@@ -29,6 +31,11 @@ const Users: CollectionConfig = {
       type: "select",
       hasMany: true,
       defaultValue: ["editor"],
+      access: {
+        // Only admins can create or update a value for this field
+        create: isAdminFieldLevel,
+        update: isAdminFieldLevel,
+      },
       options: [
         {
           label: "Admin",
