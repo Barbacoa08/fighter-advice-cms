@@ -1,12 +1,17 @@
 import { CollectionConfig } from "payload/types";
 
+import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
+
 const Tags: CollectionConfig = {
   slug: "tags",
   admin: {
     useAsTitle: "name",
   },
   access: {
+    create: isEditorOrAdmin,
     read: () => true,
+    update: isEditorOrAdmin,
+    delete: isAdmin,
   },
   fields: [
     {

@@ -1,12 +1,17 @@
 import { CollectionConfig } from "payload/types";
 
+import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
+
 const Icon: CollectionConfig = {
   slug: "icon",
   admin: {
     useAsTitle: "name",
   },
   access: {
+    create: isEditorOrAdmin,
     read: () => true,
+    update: isEditorOrAdmin,
+    delete: isAdmin,
   },
   fields: [
     {

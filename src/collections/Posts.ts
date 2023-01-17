@@ -1,5 +1,6 @@
 import { CollectionConfig } from "payload/types";
 
+import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
 import { accordionField } from "../fields/accordions";
 import { slugField } from "../fields/slug";
 
@@ -10,7 +11,10 @@ const Posts: CollectionConfig = {
     useAsTitle: "title",
   },
   access: {
+    create: isEditorOrAdmin,
     read: () => true,
+    update: isEditorOrAdmin,
+    delete: isAdmin,
   },
   fields: [
     {
