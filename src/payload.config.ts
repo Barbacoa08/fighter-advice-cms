@@ -20,4 +20,22 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, "generated-schema.graphql"),
   },
+  cors: [
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:5137",
+    "http://cms-fighter-advice.barbajoe.tech",
+    "https://cms-fighter-advice.barbajoe.tech",
+    "http://p01--payloadcms--xdqkmyn4zfnx.code.run/admin/login",
+    "https://p01--payloadcms--xdqkmyn4zfnx.code.run/admin/login",
+  ],
+  csrf: [
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:5137",
+    "http://cms-fighter-advice.barbajoe.tech",
+    "https://cms-fighter-advice.barbajoe.tech",
+    "http://p01--payloadcms--xdqkmyn4zfnx.code.run/admin/login",
+    "https://p01--payloadcms--xdqkmyn4zfnx.code.run/admin/login",
+  ],
 });
