@@ -28,12 +28,12 @@ export const Topics: CollectionConfig = {
       relationTo: "icon",
     },
     {
-      name: "author",
+      name: "author", // TODO: remove field from Posts
       type: "relationship",
       relationTo: "users",
     },
     {
-      name: "publishedDate",
+      name: "publishedDate", // TODO: remove field from Posts
       type: "date",
     },
     {
