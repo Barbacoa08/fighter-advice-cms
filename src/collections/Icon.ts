@@ -1,8 +1,8 @@
 import { CollectionConfig } from "payload/types";
 
-import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
+import { isAdmin, isEditorOrAdmin } from "../access";
 
-const Icon: CollectionConfig = {
+export const Icon: CollectionConfig = {
   slug: "icon",
   admin: {
     useAsTitle: "name",
@@ -25,5 +25,3 @@ const Icon: CollectionConfig = {
   ],
   timestamps: false,
 };
-
-export default Icon;

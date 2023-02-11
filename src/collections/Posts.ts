@@ -1,10 +1,10 @@
 import { CollectionConfig } from "payload/types";
 
-import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
+import { isAdmin, isEditorOrAdmin } from "../access";
 import { accordionField } from "../fields/accordions";
 import { slugField } from "../fields/slug";
 
-const Posts: CollectionConfig = {
+export const Posts: CollectionConfig = {
   slug: "posts",
   admin: {
     defaultColumns: ["title", "author", "tags", "status"],
@@ -67,5 +67,3 @@ const Posts: CollectionConfig = {
     },
   ],
 };
-
-export default Posts;
