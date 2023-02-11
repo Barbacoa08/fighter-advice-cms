@@ -28,15 +28,6 @@ export const Topics: CollectionConfig = {
       relationTo: "icon",
     },
     {
-      name: "author", // TODO: remove field from Topics
-      type: "relationship",
-      relationTo: "users",
-    },
-    {
-      name: "publishedDate", // TODO: remove field from Topics
-      type: "date",
-    },
-    {
       name: "tags",
       type: "relationship",
       relationTo: "tags",

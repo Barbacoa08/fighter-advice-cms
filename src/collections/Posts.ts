@@ -23,11 +23,6 @@ export const Posts: CollectionConfig = {
     },
     slugField(),
     {
-      name: "icon", // TODO: remove field from Posts
-      type: "relationship",
-      relationTo: "icon",
-    },
-    {
       name: "author",
       type: "relationship",
       relationTo: "users",
