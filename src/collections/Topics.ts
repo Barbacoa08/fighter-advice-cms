@@ -28,12 +28,12 @@ export const Topics: CollectionConfig = {
       relationTo: "icon",
     },
     {
-      name: "author", // TODO: remove field from Posts
+      name: "author", // TODO: remove field from Topics
       type: "relationship",
       relationTo: "users",
     },
     {
-      name: "publishedDate", // TODO: remove field from Posts
+      name: "publishedDate", // TODO: remove field from Topics
       type: "date",
     },
     {
@@ -50,6 +50,7 @@ export const Topics: CollectionConfig = {
     {
       name: "status",
       type: "select",
+      defaultValue: "draft",
       options: [
         {
           value: "draft",
@@ -60,7 +61,6 @@ export const Topics: CollectionConfig = {
           label: "Published",
         },
       ],
-      defaultValue: "draft",
       admin: {
         position: "sidebar",
       },

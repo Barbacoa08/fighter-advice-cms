@@ -50,6 +50,7 @@ export const Posts: CollectionConfig = {
     {
       name: "status",
       type: "select",
+      defaultValue: "draft",
       options: [
         {
           value: "draft",
@@ -60,7 +61,6 @@ export const Posts: CollectionConfig = {
           label: "Published",
         },
       ],
-      defaultValue: "draft",
       admin: {
         position: "sidebar",
       },
