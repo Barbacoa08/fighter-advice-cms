@@ -13,7 +13,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
   },
-  collections: [Posts, Tags, Users, Icon],
+  collections: [Icon, Posts, Tags, Topics, Users],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
