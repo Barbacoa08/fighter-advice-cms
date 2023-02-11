@@ -4,8 +4,8 @@ import { isAdmin, isEditorOrAdmin } from "../access";
 import { accordionField } from "../fields/accordions";
 import { slugField } from "../fields/slug";
 
-export const Posts: CollectionConfig = {
-  slug: "posts",
+export const Topics: CollectionConfig = {
+  slug: "topics",
   admin: {
     defaultColumns: ["title", "author", "tags", "status"],
     useAsTitle: "title",
@@ -23,17 +23,17 @@ export const Posts: CollectionConfig = {
     },
     slugField(),
     {
-      name: "icon", // TODO: remove field from Posts
+      name: "icon",
       type: "relationship",
       relationTo: "icon",
     },
     {
-      name: "author",
+      name: "author", // TODO: remove field from Topics
       type: "relationship",
       relationTo: "users",
     },
     {
-      name: "publishedDate",
+      name: "publishedDate", // TODO: remove field from Topics
       type: "date",
     },
     {

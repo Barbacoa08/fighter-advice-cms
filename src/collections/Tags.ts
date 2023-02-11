@@ -1,8 +1,8 @@
 import { CollectionConfig } from "payload/types";
 
-import { isAdmin, isEditorOrAdmin, isLoggedIn } from "../access";
+import { isAdmin, isEditorOrAdmin } from "../access";
 
-const Tags: CollectionConfig = {
+export const Tags: CollectionConfig = {
   slug: "tags",
   admin: {
     useAsTitle: "name",
@@ -21,5 +21,3 @@ const Tags: CollectionConfig = {
   ],
   timestamps: false,
 };
-
-export default Tags;
