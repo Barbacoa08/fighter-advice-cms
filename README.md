@@ -1,3 +1,5 @@
+![CMS](https://cronitor.io/badges/TzJIUD/production/xTL-dCQnXsn_-_vITkMQ-GtBnio.svg)
+
 This project was created using `npx create-payload-app` using the [ts-blog template](https://payloadcms.com/docs/getting-started/installation).
 
 # figher-advice-cms ([admin](https://cms-fighter-advice.barbajoe.tech/admin/), [api](https://cms-fighter-advice.barbajoe.tech/api/))
