@@ -3465,10 +3465,10 @@ nodemailer@^6.9.0:
   resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.1.tgz#8249d928a43ed85fec17b13d2870c8f758a126ed"
   integrity sha512-qHw7dOiU5UKNnQpXktdgQ1d3OFgRAekuvbJLcdG5dnEo/GtcTHRYM7+UfJARdOFU9WUQO8OiIamgWPmiSFHYAA==
 
-nodemon@2.0.21:
-  version "2.0.21"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.21.tgz#267edff25578da91075d6aa54346ef77ecb7b302"
-  integrity sha512-djN/n2549DUtY33S7o1djRCd7dEm0kBnj9c7S9XVXqRUbuggN1MZH/Nqa+5RFQr63Fbefq37nFXAE9VU86yL1A==
+nodemon@2.0.22:
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.22.tgz#182c45c3a78da486f673d6c1702e00728daf5258"
+  integrity sha512-B8YqaKMmyuCO7BowF1Z1/mkPqLk6cs/l63Ojtd6otKjMx47Dq1utxfRxcavH1I7VSaL8n5BUaoutadnsX3AAVQ==
   dependencies:
     chokidar "^3.5.2"
     debug "^3.2.7"
@@ -3761,10 +3761,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@1.6.22:
-  version "1.6.22"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-1.6.22.tgz#43cfba4725ea4de02671ddfa2d8ac30221a54939"
-  integrity sha512-RyUhcJKfLle3aZjNOQWte5Q4DwNNhHYEDtbTGtzAsJ6qePyhvj+4oOgzXRBrdfJYKQTpUnAnSG8GAGReS/kzYw==
+payload@1.6.26:
+  version "1.6.26"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-1.6.26.tgz#f2d47391cfe3827ba8f28a74648126c45178ed7b"
+  integrity sha512-gqzJDdMukLXgil4HY+k/heKlYQ835tA1jAO7wI2fRyxOtsIMAmIOSqwJxWrailXDdSubX700hgjYvniLaMM5jg==
   dependencies:
     "@date-io/date-fns" "^2.16.0"
     "@dnd-kit/core" "^6.0.7"
