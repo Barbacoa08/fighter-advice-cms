@@ -1,3 +1,4 @@
+import Password from "payload/dist/admin/components/forms/field-types/Password";
 import { CollectionConfig } from "payload/types";
 
 import { isAdmin, isEditorOrAdmin } from "../access";
@@ -19,12 +20,17 @@ export const Program: CollectionConfig = {
   fields: [
     slugField(),
     {
-      name: "passcode",
+      name: "title",
       type: "text",
     },
     {
-      name: "title",
+      name: "passcode",
       type: "text",
+      admin: {
+        components: {
+          Field: Password,
+        },
+      },
     },
     {
       name: "content",
