@@ -1,0 +1,53 @@
+import { CollectionConfig } from "payload/types";
+
+import { isAdmin, isEditorOrAdmin } from "../access";
+import { accordionField } from "../fields/accordions";
+import { slugField } from "../fields/slug";
+
+export const Program: CollectionConfig = {
+  slug: "program",
+  admin: {
+    defaultColumns: ["title", "author", "status"],
+    useAsTitle: "title",
+  },
+  access: {
+    create: isEditorOrAdmin,
+    read: () => true,
+    update: isEditorOrAdmin,
+    delete: isAdmin,
+  },
+  fields: [
+    slugField(),
+    {
+      name: "passcode",
+      type: "text",
+    },
+    {
+      name: "title",
+      type: "text",
+    },
+    {
+      name: "content",
+      type: "richText",
+    },
+    accordionField,
+    {
+      name: "status",
+      type: "select",
+      defaultValue: "draft",
+      options: [
+        {
+          value: "draft",
+          label: "Draft",
+        },
+        {
+          value: "published",
+          label: "Published",
+        },
+      ],
+      admin: {
+        position: "sidebar",
+      },
+    },
+  ],
+};
