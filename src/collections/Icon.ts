@@ -17,10 +17,12 @@ export const Icon: CollectionConfig = {
     {
       name: "name",
       type: "text",
+      required: true,
     },
     {
       name: "value",
       type: "text",
+      required: true,
     },
   ],
   timestamps: false,

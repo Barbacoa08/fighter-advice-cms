@@ -20,6 +20,7 @@ export const Posts: CollectionConfig = {
     {
       name: "title",
       type: "text",
+      required: true,
     },
     slugField(),
     {
@@ -40,11 +41,13 @@ export const Posts: CollectionConfig = {
     {
       name: "content",
       type: "richText",
+      required: true,
     },
     accordionField,
     {
       name: "status",
       type: "select",
+      required: true,
       defaultValue: "draft",
       options: [
         {
