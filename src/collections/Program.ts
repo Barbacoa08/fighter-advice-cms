@@ -22,10 +22,12 @@ export const Program: CollectionConfig = {
     {
       name: "title",
       type: "text",
+      required: true,
     },
     {
       name: "passcode",
       type: "text",
+      required: true,
       admin: {
         components: {
           Field: Password,
@@ -40,6 +42,7 @@ export const Program: CollectionConfig = {
     {
       name: "status",
       type: "select",
+      required: true,
       defaultValue: "draft",
       options: [
         {
