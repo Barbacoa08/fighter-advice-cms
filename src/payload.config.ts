@@ -1,7 +1,7 @@
 import path from "path";
 import { buildConfig } from "payload/config";
 
-import { Icon, Posts, Tags, Topics, Users } from "./collections";
+import { Icon, Posts, Program, Tags, Topics, Users } from "./collections";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_BASE_DNS,
@@ -11,7 +11,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
   },
-  collections: [Icon, Posts, Tags, Topics, Users],
+  collections: [Icon, Posts, Tags, Topics, Users, Program],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
