@@ -30,8 +30,8 @@
     "generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema"
   },
   "dependencies": {
-    "payload": "1.8.3",
-    "dotenv": "16.1.0",
+    "payload": "1.8.5",
+    "dotenv": "16.1.4",
     "express": "4.18.2"
   },
   "devDependencies": {
@@ -40,6 +40,6 @@
     "nodemon": "2.0.22",
     "ts-node": "10.9.1",
     "copyfiles": "2.4.1",
-    "typescript": "5.0.4"
+    "typescript": "5.1.3"
   }
 }
