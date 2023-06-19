@@ -2003,10 +2003,10 @@ dot-prop@^6.0.1:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@16.1.4:
-  version "16.1.4"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.1.4.tgz#67ac1a10cd9c25f5ba604e4e08bc77c0ebe0ca8c"
-  integrity sha512-m55RtE8AsPeJBpOIFKihEmqUcoVncQIwo7x9U8ZwLEZw9ZpXboz2c+rvog+jUaJvVrZ5kBOeYQBX5+8Aa/OZQw==
+dotenv@16.3.1:
+  version "16.3.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
 dotenv@^8.6.0:
   version "8.6.0"
@@ -3902,10 +3902,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-1.9.1.tgz#3c3e8ec84c22a611e20d5b917aff55d9c726e4cb"
-  integrity sha512-U+renrzwFvb6I/njRZTby2DWiHBXLFPg85uex8JMyKBpYiPaUxy0GaWGqO54LsDfvbKh2f61rVbUcdxa9gxsRQ==
+payload@1.9.5:
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-1.9.5.tgz#aa110ef3c81bdb47ea3f65c61f444477a35d38b1"
+  integrity sha512-CZ/vNn5EpdNNpHKk3WLXnI/HhKtyDWokcWuhYR/9U+SjcSeVbSCLwIwfCgcwGZpkVnbDuwZtTsPq0xZa44U44A==
   dependencies:
     "@date-io/date-fns" "^2.16.0"
     "@dnd-kit/core" "^6.0.7"
