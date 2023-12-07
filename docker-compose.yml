@@ -3,7 +3,7 @@ version: '3'
 services:
 
   payload:
-    image: node:21-alpine
+    image: node:21.4.0-alpine
     ports:
       - "3000:3000"
     volumes:
